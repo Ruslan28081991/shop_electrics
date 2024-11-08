@@ -138,14 +138,11 @@ export class ItemView {
     
     renderOrders(orders) {
         this.orderNode.innerHTML = ''
-        // console.log(order)
+        
         orders.forEach(order => {
             this.orderNode.innerHTML += `
                 <p class="order_list">${order.id}</p>
             `
         })
-        // this.orderNode.innerHTML += `
-        //    <p>${orders.id}</p>
-        // `
     }
 }
