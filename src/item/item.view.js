@@ -112,7 +112,7 @@ export class ItemView {
     }
 
     openBag = () => {
-        window.location.href = 'bag.html'
+        window.location.href = '/shop_electrics/bag.html'
     }
 
     imgWithLocalStorage() {

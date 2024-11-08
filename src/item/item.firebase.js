@@ -80,14 +80,6 @@ import { getDownloadURL,
     async getOrder() {
         const orderDoc = await getDocs(collection(this.db, this.collectionKeyOrders));
     
-        // let orderId = null;
-        // orderDoc.forEach((doc) => {
-        //   orderId = {
-        //     id: doc.id,
-        //     ...doc.data(),
-        //   }
-        // })
-        // return orderId
         let orders = []
         orderDoc.forEach((doc) => {
           orders.push({
@@ -95,7 +87,6 @@ import { getDownloadURL,
             ...doc.data()
           })
         })
-        console.log(orders);
         return orders
     }
 }
