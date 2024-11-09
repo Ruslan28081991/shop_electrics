@@ -12,15 +12,14 @@ export class BagView {
         this.onProductChange = onProductChange
    
         this.renderBagImages()
-        
     }
     
     _back = () => {
-        window.location.href = 'index.html'
+        window.location.href = '/shop_electrics/index.html'
     }
 
     _order() {
-        window.location.href = 'checkout.html'
+        window.location.href = '/shop_electrics/src/checkout/checkout.html'
     }
 
     renderBagImages () {
@@ -30,7 +29,7 @@ export class BagView {
         products.forEach(img => {
             const imgElement = document.createElement('img');
             imgElement.className = 'bag_img';
-            imgElement.src = img;
+            imgElement.src = `/shop_electrics/${img}`;
             this.bagNode.appendChild(imgElement);
         });
     }
@@ -58,7 +57,7 @@ export class BagView {
 
         const bagImg = document.createElement('img');
         bagImg.className = 'bag_image';
-        bagImg.src = `${product.imgURL}`;
+        bagImg.src = `/shop_electrics/${product.imgURL}`;
 
         const bagTitle = document.createElement('p');
         bagTitle.className = 'bag_title';

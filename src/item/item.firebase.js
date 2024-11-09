@@ -71,6 +71,7 @@ import { getDownloadURL,
         const docRef = await addDoc(collection(this.db, this.collectionKeyOrders), orderData);
         console.log("Заказ сохранен с ID: ", docRef.id);
         // return docRef.id;
+        alert("Ваш заказ принят")
         return { ...orderData, id:docRef.id };
       } catch (error) {
         console.error("Ошибка добавления заказа: ", error)

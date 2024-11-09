@@ -11,7 +11,7 @@ export class CheckoutView {
     }
 
     _back = () => {
-        window.location.href = 'bag.html'
+        window.location.href = '/shop_electrics/src/bag/bag.html'
     }
 
     render = (products) => {
@@ -98,7 +98,7 @@ export class CheckoutView {
                     <div class="pay_container">
                         <div class="pay_data">
                             <p class="pay_text">
-                                <img class="pay_cart_img" src="./public/pay_cart.png" alt="Карта">
+                                <img class="pay_cart_img" src="/shop_electrics/pay_cart.png" alt="Карта">
                                 Оплата картой при получении
                             </p>
                         </div>
@@ -140,7 +140,7 @@ export class CheckoutView {
             products.forEach(product => {
                 checkoutProductsContainer.innerHTML += `
                 <div class="checkout_bag_container">
-                    <img class="bag_image" src="${product.img}" alt="product">
+                    <img class="bag_image" src="/shop_electrics/${product.img}" alt="product">
                     <p class="bag_title">${product.title}</p>
                     <p class="bag_series">${product.series}</p>
                     <p class="bag_descr">${product.descriptionShort}</p>
@@ -244,11 +244,11 @@ export class CheckoutView {
     _handlePayChange = () => {
         if(this.payCartInputNode.checked) {
             this.payTextNode.innerHTML = `
-                <img class="pay_cart_img" src="./public/pay_cart.png" alt="Карта">
+                <img class="pay_cart_img" src="/shop_electrics/pay_cart.png" alt="Карта">
                 Оплата картой при получении`
         } else if(this.payCashInputNode.checked) {
             this.payTextNode.innerHTML = `
-                <img class="pay_cart_img" src="./public/pay_cash.png" alt="Карта">
+                <img class="pay_cart_img" src="/shop_electrics/pay_cash.png" alt="Карта">
                 Оплата наличными при получении`
         }
     }

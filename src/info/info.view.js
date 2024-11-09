@@ -18,11 +18,11 @@ export class InfoView {
     }
 
     _back = () => {
-        window.location.href = 'index.html'
+        window.location.href = '/shop_electrics/index.html'
     }
 
     _bag = () => {
-        window.location.href = 'bag.html'
+        window.location.href = '/shop_electrics/src/bag/bag.html'
     }
 
     renderInfo = (product) => {
@@ -33,7 +33,7 @@ export class InfoView {
             this.infoNode.innerHTML = `
                 <div class='container_info'>
                     <div class="info_img_box">
-                        <img class="info_img" src='${product.imgURL}'>
+                        <img class="info_img" src='/shop_electrics/${product.imgURL}'>
                     </div>
                     <p class="info_title">${product.title}</p>
                     <p class="info_series">${product.series}</p>
@@ -94,7 +94,7 @@ export class InfoView {
         products.forEach(img => {
             const imgElement = document.createElement('img');
             imgElement.className = 'bag_img';
-            imgElement.src = img;
+            imgElement.src = `/shop_electrics/${img}`;
             this.bagNode.appendChild(imgElement);
         });
     }

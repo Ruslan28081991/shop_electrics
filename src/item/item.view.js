@@ -1,4 +1,15 @@
 import basket from '/basket.png';
+import galaxy from '/galaxy.png';
+import galaxyS21 from '/galaxyS21.png';
+import headphones from '/headphones.png';
+import iphone11 from '/iphone11.png';
+import iphoneBlue from '/iphoneBlue.png';
+import iphoneBlue13 from '/iphoneBlue13.png';
+import iphoneGreen11 from '/iphoneGreen11.png';
+import iphoneGrey13 from '/iphoneGrey13.png';
+import iphoneWhite from '/iphoneWhite.png';
+import laptop from '/laptop.png';
+import watch from '/watch.png'
 
 export class ItemView {
     constructor({ 
@@ -68,7 +79,7 @@ export class ItemView {
         itemWrapper.append(itemBox, itemTitle, itemSeries);
         itemPriceWrapper.append(itemPrice, itemBtn);
         itemBtn.append(itemBtnImg);
-       
+
         this.porductsBox.append(itemNode);
     }
 
@@ -85,7 +96,8 @@ export class ItemView {
     }
 
     newWindow = (product) => {
-        window.location.href = `info.html?productId=${product.id}`;
+        window.location.href = `/shop_electrics/src/info/info.html?productId=${product.id}`;
+        // window.location.href = `info.html?productId=${product.id}`;
     }
 
     addBag = (product) => {
@@ -112,7 +124,7 @@ export class ItemView {
     }
 
     openBag = () => {
-        window.location.href = '/shop_electrics/bag.html'
+        window.location.href = '/shop_electrics/src/bag/bag.html';
     }
 
     imgWithLocalStorage() {
@@ -145,4 +157,5 @@ export class ItemView {
             `
         })
     }
+
 }
