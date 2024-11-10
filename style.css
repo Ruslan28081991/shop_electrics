@@ -634,6 +634,6 @@ body {
 }
 
 .checkout_bag_container {
-  padding: 0 20px;
+  padding: 0 20px 15px 20px;
   border-bottom: 1px solid #1A1F1680;
 }

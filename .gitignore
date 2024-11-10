@@ -10,17 +10,6 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
-# public
-# src
-# bag.html
-# checkout.html
-# index.html
-# index.js
-# info.html
-# package-lock.json
-# package.json
-# style.css
-# vite.config.js
 *.local
 
 # Editor directories and files
