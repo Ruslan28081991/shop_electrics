@@ -97,7 +97,6 @@ export class ItemView {
 
     newWindow = (product) => {
         window.location.href = `/shop_electrics/src/info/info.html?productId=${product.id}`;
-        // window.location.href = `info.html?productId=${product.id}`;
     }
 
     addBag = (product) => {

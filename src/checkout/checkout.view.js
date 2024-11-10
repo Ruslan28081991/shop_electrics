@@ -11,7 +11,7 @@ export class CheckoutView {
     }
 
     _back = () => {
-        window.location.href = '/shop_electrics/src/bag/bag.html'
+        window.location.href = '/shop_electrics/src/bag/bag.html';
     }
 
     render = (products) => {
