@@ -78,7 +78,6 @@ body {
   cursor: pointer;
 }
 
-/* NEXT */
 .back {
   padding: 2% 5%;
   font-size: 20px;
@@ -87,7 +86,8 @@ body {
 }
 
 .container_info {
-  max-width: 950px;
+  /* max-width: 950px; */
+  max-width: 95%;
   padding: 20px 15px;
 }
 
@@ -178,7 +178,7 @@ body {
 .info_line {
   margin: 0 auto;
   margin-top: 100px;
-  width: 95%;
+  width: 99%;
   border-top: 3px solid #1A1F1680;
 }
 
@@ -209,6 +209,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 15px;
 }
 
 .bag_text {
@@ -335,7 +336,8 @@ body {
 }
 
 .adress {
-  width: 871px;
+  /* width: 871px; */
+  width: 70%;
   height: 247px;
   padding: 16px;
   flex-wrap: wrap;
@@ -391,8 +393,6 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-
-
 .adress_popup_box {
   display: flex;
   flex-direction: column;
@@ -439,7 +439,8 @@ body {
 
 .pay {
   margin-top: 20px;
-  width: 871px;
+  /* width: 871px; */
+  width: 70%;
   height: 153px;
   padding: 16px;
   gap: 8px;
@@ -565,7 +566,8 @@ body {
 
 .checkout_summa {
   float: right;
-  width: 243px;
+  /* width: 243px; */
+  width: 20%;
   height:264px;
   padding: 16px;
   border-radius: 12px;
@@ -604,7 +606,8 @@ body {
 }
 
 .summa_btn {
-  width: 245px;
+  /* width: 245px; */
+  width: 99%;
   height:38px;
   padding: 8px 24px;
   border: none;
@@ -619,7 +622,8 @@ body {
   margin-top: 20px;
   border-radius: 13px;
   background: #FFFFFF;
-  width: 871px;
+  /* width: 871px; */
+  width: 69.5%;
 }
 
 .checkout_products_text {

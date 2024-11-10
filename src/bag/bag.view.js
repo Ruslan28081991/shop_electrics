@@ -27,10 +27,14 @@ export class BagView {
         const products = this.imgWithLocalStorage();
 
         products.forEach(img => {
+            const envelopeImg = document.createElement('div');
+            envelopeImg.classList = 'bag_envelope_img';
             const imgElement = document.createElement('img');
             imgElement.className = 'bag_img';
             imgElement.src = `/shop_electrics/${img}`;
-            this.bagNode.appendChild(imgElement);
+
+            this.bagNode.appendChild(envelopeImg)
+            envelopeImg.append(imgElement)
         });
     }
 
