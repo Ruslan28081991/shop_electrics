@@ -19,7 +19,7 @@ export class BagView {
     }
 
     _order() {
-        window.location.href = '/shop_electrics/src/checkout/checkout.html'
+        window.location.href = '/shop_electrics/checkout.html'
     }
 
     renderBagImages () {

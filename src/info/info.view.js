@@ -22,7 +22,7 @@ export class InfoView {
     }
 
     _bag = () => {
-        window.location.href = '/shop_electrics/src/bag/bag.html'
+        window.location.href = '/shop_electrics/bag.html'
     }
 
     renderInfo = (product) => {

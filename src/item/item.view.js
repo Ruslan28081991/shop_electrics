@@ -96,7 +96,7 @@ export class ItemView {
     }
 
     newWindow = (product) => {
-        window.location.href = `/shop_electrics/src/info/info.html?productId=${product.id}`;
+        window.location.href = `/shop_electrics/info.html?productId=${product.id}`;
     }
 
     addBag = (product) => {
@@ -123,7 +123,7 @@ export class ItemView {
     }
 
     openBag = () => {
-        window.location.href = '/shop_electrics/src/bag/bag.html';
+        window.location.href = '/shop_electrics/bag.html';
     }
 
     imgWithLocalStorage() {
